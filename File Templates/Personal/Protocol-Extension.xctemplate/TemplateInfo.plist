@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Summary</key>
+	<string>A File Template</string>
+	<key>Description</key>
+	<string>A File Template</string>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>SortOrder</key>
+	<integer>2</integer>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Name</key>
+			<string>Name:</string>
+			<key>Description</key>
+			<string>The name of the file to create</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>false</string>
+			<key>Identifier</key>
+			<string>ClassOnly</string>
+			<key>Name</key>
+			<string>Class-Only</string>
+			<key>Description</key>
+			<string>....</string>
+			<key>Required</key>
+			<false/>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>fileType</key>
+				<array>
+					<string>Protocol</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>Extension</string>
+			<key>Identifier</key>
+			<string>fileType</string>
+			<key>Name</key>
+			<string>Type:</string>
+			<key>Description</key>
+			<string>The name of the protocol or extension to create</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>popup</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>Values</key>
+			<array>
+				<string>Protocol</string>
+				<string>Extension</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>extendedClass</string>
+			<key>Name</key>
+			<string>Class:</string>
+			<key>Description</key>
+			<string>Which class to add a category or extension to</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>Checked</key>
+				<array>
+					<string>false</string>
+				</array>
+				<key>fileType</key>
+				<array>
+					<string>Extension</string>
+				</array>
+			</dict>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>class</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
