@@ -2,7 +2,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_subclassSwift:identifier___ {
+class ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_subclassSwift___ {
 
     override func viewDidLoad() {
         super.viewDidLoad()
